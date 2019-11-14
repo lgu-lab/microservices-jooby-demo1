@@ -1,0 +1,12 @@
+
+
+  https://www.baeldung.com/jooby 
+  
+  https://medium.com/@espina.edgar/java-micro-frameworks-why-jooby-59f0b346e819
+  
+  
+  
+  REST JSON : 
+  
+  https://github.com/jooby-project/greeting
+  

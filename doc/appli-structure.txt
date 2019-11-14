@@ -1,0 +1,19 @@
+├── public
+|   └── welcome.html
+├── conf
+|   ├── application.conf
+|   └── logback.xml
+└── src
+|   ├── main
+|   |   └── java
+|   |       └── com
+|   |           └── baeldung
+|   |               └── jooby
+|   |                   └── App.java
+|   └── test
+|       └── java
+|           └── com
+|               └── baeldung
+|                   └── jooby
+|                       └── AppTest.java
+├── pom.xml
