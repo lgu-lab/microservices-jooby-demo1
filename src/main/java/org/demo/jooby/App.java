@@ -1,5 +1,6 @@
 package org.demo.jooby;
 
+import org.demo.controllers.HelloController;
 import org.demo.controllers.PersonController;
 import org.jooby.Jooby;
 import org.jooby.json.Jackson;
@@ -29,7 +30,7 @@ public class App extends Jooby {
 	{	
 		use(new Jackson()); // Automatically switch to JSON ( Content-Type	application/json;charset=utf-8 )
 		
-	    get( "/hello", () -> "Hello from Jooby"); // http://localhost:8081/hello
+//	    get( "/hello", () -> "Hello from Jooby"); // http://localhost:8081/hello
 
 	    get( "/user", req -> "All users ");  // "/user" and "/user/" 
 	    get( "/user/:id", req -> "User for id " + req.param("id").value() );
@@ -37,6 +38,7 @@ public class App extends Jooby {
 	
 	// MVC controllers 
 	{
+		use(HelloController.class);
 		use(PersonController.class);
 	}
 	
